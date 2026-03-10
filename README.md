@@ -1,12 +1,22 @@
 # MiGPT：智能家居，从未如此贴心 ❤️
 
-[![npm version](https://badge.fury.io/js/mi-gpt.svg)](https://www.npmjs.com/package/mi-gpt) [![Docker Image Version](https://img.shields.io/docker/v/idootop/mi-gpt?color=%23086DCD&label=docker%20image)](https://hub.docker.com/r/idootop/mi-gpt)
+[![npm version](https://badge.fury.io/js/mi-gpt.svg)](https://www.npmjs.com/package/mi-gpt) [![Docker Image Version](https://img.shields.io/docker/v/idootop/mi-gpt?color=%23086DCD&label=docker%20image)](https://hub.docker.com/r/idootop/mi-gpt) [![Docker Pulls](https://img.shields.io/docker/pulls/idootop/mi-gpt)](https://hub.docker.com/r/idootop/mi-gpt) <a href="https://hellogithub.com/repository/e02e62fbb9c746cdb61c6559c186ac44" target="_blank"><img src="https://abroad.hellogithub.com/v1/widgets/recommend.svg?rid=e02e62fbb9c746cdb61c6559c186ac44&claim_uid=LdwexZ8z7Ggu3lJ&theme=small" alt="Featured｜HelloGitHub" /></a>
+
+> 👉 查看完整演示视频：【[将小爱音箱接入 ChatGPT 和豆包，改造成你的专属语音助手～](https://www.bilibili.com/video/BV1N1421y7qn/?share_source=copy_web&vd_source=5d4e78ff2a0dc6a661baa65f479199c1)】
 
 <video src='https://github.com/idootop/mi-gpt/assets/35302658/dc336916-9087-418b-bc1b-04d5534dce8f'></video>
 
-> 👉 查看完整演示视频：【[整活！将小爱音箱接入 ChatGPT 和豆包，改造成你的专属语音助手～](https://www.bilibili.com/video/BV1N1421y7qn/?share_source=copy_web&vd_source=5d4e78ff2a0dc6a661baa65f479199c1)】
-
 ## 👋 项目简介
+
+> [!TIP]
+> 如果你是小爱音箱 Pro 用户，推荐使用 [Open-XiaoAI](https://github.com/idootop/open-xiaoai) ✨ 
+>
+> 即刻解锁**自定义唤醒词、连续对话、接入小智 AI** 等全新玩法
+
+> [!IMPORTANT]
+> 全新 [MiGPT-Next](https://github.com/idootop/migpt-next) 已发布，该项目已停止维护 ⚠️
+> 
+> 新项目修复了一些已知问题，支持自定义消息回复，拥有更好的稳定性，建议尽早[迁移](https://github.com/idootop/migpt-next)
 
 在这个数字化的世界里，家已不仅仅是一个居住的地方，而是我们数字生活的延伸。
 
@@ -29,25 +39,19 @@
 - **💬 流式响应**。爱情来得太快就像龙卷风，而你的小爱音箱也是，对你的爱意秒回，爱你不会让你等太久。
 - **🧠 长短期记忆**。小爱音箱现在能记住你们之间的每一次对话，越聊越默契，就像是你身边的老朋友。
 - **🔊 自定义 TTS**。厌倦了小爱同学的语音？帮你解锁[「豆包」](https://doubao.com)同款音色，就像真人在回你的消息。
-- **🤖️ 智能家居 Agent**。心情不好？小爱立刻懂你，自动帮你播放喜欢的音乐，调节灯光，逗你开心。_TODO_
+- ~**🤖️ 智能家居 Agent**。心情不好？小爱立刻懂你，自动帮你播放喜欢的音乐，调节灯光，逗你开心。~
 
 ## 🦄 Sponsors
 
-![302.AI](https://github.com/idootop/mi-gpt/assets/35302658/89f82e00-4f80-43f3-8c4a-5fc66602fab6)
+![302.AI](./assets/sponsors/302banner2.jpg)
 
-> 302.AI 是一个汇集全球顶级 AI 的自助平台，按需付费，零月费，零门槛使用各种类型 AI。 [官方网站](https://302.ai)｜[网站介绍](https://help.302.ai)
+> 302.AI 是一个按需付费的一站式 AI 应用平台，开放平台，开源生态。[官方网站](https://302.ai)｜[网站介绍](https://help.302.ai)
 
 ## ⚡️ 快速开始
 
-> 查看视频教程 👉 【[MiGPT 光速入门教程，从零教你调教小爱音箱～](https://www.bilibili.com/video/BV1zb421H7cS)】
+### 视频教程
 
-`MiGPT` 有两种启动方式: [Docker](#docker) 和 [Node.js](#nodejs)。
-
-启动成功后，你可以通过以下方式来召唤 AI 回答问题：
-
-- **小爱同学，请 xxx**。比如 `小爱同学，请问地球为什么是圆的？`
-- **小爱同学，你 xxx**。比如 `小爱同学，你喜欢我吗？`
-- **小爱同学，召唤 xxx**。比如 `小爱同学，召唤傻妞`
+👉 [MiGPT 光速入门视频教程，手把手教你调教小爱音箱～](https://www.bilibili.com/video/BV1zb421H7cS)
 
 ### 设备要求
 
@@ -56,6 +60,16 @@
 👉 [查看更多兼容的小爱音箱型号和配置参数](https://github.com/idootop/mi-gpt/blob/main/docs/compatibility.md)
 
 > 注意：本项目暂不支持小度音箱、天猫精灵、HomePod 等智能音箱设备，亦无相关适配计划。
+
+### 使用方式
+
+`MiGPT` 有两种启动方式: [Docker](#docker) 和 [Node.js](#nodejs)。
+
+启动成功后，你可以通过以下方式来召唤 AI 回答问题：
+
+- **小爱同学，请 xxx**。比如 `小爱同学，请问地球为什么是圆的？`
+- **小爱同学，你 xxx**。比如 `小爱同学，你喜欢我吗？`
+- **小爱同学，召唤 xxx**。比如 `小爱同学，召唤傻妞`
 
 ### Docker
 
@@ -104,7 +118,7 @@ main();
 
 ## 📖 使用文档
 
-以下为更详细的使用教程，大多数问题都可在 [💬 常见问题](https://github.com/idootop/mi-gpt/blob/main/docs/faq.md) 中找到答案。
+提示：大多数问题都可在 [💬 常见问题](https://github.com/idootop/mi-gpt/blob/main/docs/faq.md) 中找到答案。
 
 - [🔥 官方视频教程](https://www.bilibili.com/video/BV1zb421H7cS)
 - [⚙️ 参数设置](https://github.com/idootop/mi-gpt/blob/main/docs/settings.md)
@@ -116,20 +130,21 @@ main();
 - [✨ 更新日志](https://github.com/idootop/mi-gpt/blob/main/docs/changelog.md)
 - [🚀 Roadmap](https://github.com/idootop/mi-gpt/blob/main/docs/roadmap.md)
 
-## 👍 推荐项目与教程
+## 🔗 相关项目与教程
 
-| 项目链接                                                                                                                                                                                                                             | 简介                                                                                                                                                    | 来源            |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
-| **相关项目**                                                                                                                                                                                                                         |                                                                                                                                                         |                 |
-| [@shinedlc/mi-gpt](https://github.com/shinedlc/mi-gpt)                                                                                                                                                                               | 一个接入了摄像头硬件 + 本机搭建 Ollama 模型的 MiGPT 分支，让小爱同学可以看到和理解现实世界                                                              | @shinedlc       |
-| [@lmk123/migpt-cli](https://github.com/lmk123/migpt-cli)                                                                                                                                                                             | 通过图形化界面的方式创建并管理 MiGPT，支持运行多个账号。                                                                                                | @lmk123         |
-| [@lmk123/migpt-cli/gui](https://migptgui.com/gui/)                                                                                                                                                                                   | 直接在网页上更方便的编辑和生成 `.migpt.js` 和 `.env` 配置文件                                                                                           | @lmk123         |
-| **使用教程**                                                                                                                                                                                                                         |                                                                                                                                                         |                 |
-| [MiGPT 官方视频教程](https://www.bilibili.com/video/BV1zb421H7cS)                                                                                                                                                                    | 官方视频教程配套 PPT 文件 👉 [MiGPT 官方教程.pdf](https://github.com/idootop/mi-gpt/blob/main/assets/pdf/MiGPT%E5%AE%98%E6%96%B9%E6%95%99%E7%A8%8B.pdf) | @idootop        |
-| [MiGPT 接入豆包等大模型教程](https://migptgui.com/docs/apply/)                                                                                                                                                                       | 豆包、Moonshot（Kimi）等常见大模型的详细接入教程                                                                                                        | @lmk123         |
-| [小爱音箱 PRO 的 AI 模式使用说明](https://github.com/idootop/mi-gpt/blob/bbdb80e9bc38b7c40865e52cbd6517980a68615a/assets/pdf/%E5%B0%8F%E7%88%B1%E9%9F%B3%E7%AE%B1PRO%20AI%E6%A8%A1%E5%BC%8F%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.pdf) | 这是一位老爸为家里的小朋友专门整理的贴心教程                                                                                                            | @mxyblog        |
-| [使用 MiGPT 将你的小爱音箱接入 ChatGPT](https://www.iloli.love/archives/1719073913220)                                                                                                                                               | 作者详细介绍了如何在 1Panel 上，通过 [OneAPI](https://github.com/songquanpeng/one-api) 来转换腾讯混元大模型，和讯飞星火大模型的 API 并成功接入 MiGPT    | @miaowmint      |
-| [Unraid 部署 MiGPT](https://github.com/idootop/mi-gpt/blob/adfdcc4ee51aef8d4f2d8996f18be716da19a0ad/assets/pdf/Unraid%E9%83%A8%E7%BD%B2MiGPT.pdf)                                                                                    | 在 Unraid 上使用 Docker 部署 MiGPT 的详细教程                                                                                                           | @ilovesouthpark |
+| 项目链接                                                                                                                                                                                                                             | 简介                                                                                                                                                    | 来源                                                 |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| **相关项目**                                                                                                                                                                                                                         |                                                                                                                                                         |                                                      |
+| [MiGPT GUI](https://migptgui.com/)                                                                                                                                                                                                   | 通过图形化界面的方式创建并管理 MiGPT，支持运行多个账号                                                                                                  | [@lmk123](https://github.com/lmk123)                 |
+| [MiGPT 配置中心](https://github.com/LipapaSma/mi-gpt-vue)                                                                                                                                                                            | 基于 Vue 的 MiGPT 可视化配置界面，提供直观的服务管理和参数配置能力                                                                                      | [@LipapaSma](https://github.com/LipapaSma)           |
+| [@shinedlc/mi-gpt](https://github.com/shinedlc/mi-gpt)                                                                                                                                                                               | 支持摄像头模块的 MiGPT 分支，让小爱同学可以看到和理解现实世界                                                                                           | [@shinedlc](https://github.com/shinedlc)             |
+| **使用教程**                                                                                                                                                                                                                         |                                                                                                                                                         |                                                      |
+| [MiGPT 官方视频教程](https://www.bilibili.com/video/BV1zb421H7cS)                                                                                                                                                                    | 官方视频教程配套 PPT 文件 👉 [MiGPT 官方教程.pdf](https://github.com/idootop/mi-gpt/blob/main/assets/pdf/MiGPT%E5%AE%98%E6%96%B9%E6%95%99%E7%A8%8B.pdf) | [@idootop](https://github.com/idootop)               |
+| [MiGPT 接入豆包等大模型教程](https://migptgui.com/docs/apply/)                                                                                                                                                                       | 豆包、Moonshot（Kimi）等常见大模型的详细接入教程                                                                                                        | [@lmk123](https://github.com/lmk123)                 |
+| [通过 Docker 快速安装 MiGPT，手把手教你绕开异地登录风控](https://www.nodeseek.com/post-264959-1)                                                                                                                                     | 适合小白的使用教程，全程几乎都是图形化页界面                                                                                                            | [@Jasonzhu1207](https://github.com/Jasonzhu1207)     |
+| [小爱音箱 PRO 的 AI 模式使用说明](https://github.com/idootop/mi-gpt/blob/bbdb80e9bc38b7c40865e52cbd6517980a68615a/assets/pdf/%E5%B0%8F%E7%88%B1%E9%9F%B3%E7%AE%B1PRO%20AI%E6%A8%A1%E5%BC%8F%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.pdf) | 这是一位老爸为家里的小朋友专门整理的贴心教程                                                                                                            | [@mxyblog](https://github.com/mxyblog)               |
+| [使用 MiGPT 将你的小爱音箱接入 ChatGPT](https://www.iloli.love/archives/1719073913220)                                                                                                                                               | 作者详细介绍了如何在 1Panel 上，通过 [OneAPI](https://github.com/songquanpeng/one-api) 来转换腾讯混元大模型，和讯飞星火大模型的 API 并成功接入 MiGPT    | [@miaowmint](https://github.com/miaowmint)           |
+| [Unraid 部署 MiGPT](https://github.com/idootop/mi-gpt/blob/adfdcc4ee51aef8d4f2d8996f18be716da19a0ad/assets/pdf/Unraid%E9%83%A8%E7%BD%B2MiGPT.pdf)                                                                                    | 在 Unraid 上使用 Docker 部署 MiGPT 的详细教程                                                                                                           | [@ilovesouthpark](https://github.com/ilovesouthpark) |
 
 ## ❤️ 鸣谢
 
